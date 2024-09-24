@@ -1,0 +1,237 @@
+============================================
+Analyzing file: /home/kawthar/Téléchargements/visitorDesignPattern/src/TaxHolidayVisitor.java
+============================================
+
+
+Class: TaxHolidayVisitor
+Attributes:
+    None
+Methods:
+    - visit
+        Called methods:
+            - computeTax
+    - visit
+        Called methods:
+            - computeTax
+
+============================================
+Analyzing file: /home/kawthar/Téléchargements/visitorDesignPattern/src/Product.java
+============================================
+
+
+Class: Product
+Attributes:
+    - name (private)
+    - price (private)
+Methods:
+    - Product
+        Called methods:
+            - setName
+            - setPrice
+    - getName
+        Called methods:
+            None
+    - setName
+        Called methods:
+            None
+    - getPrice
+        Called methods:
+            None
+    - setPrice
+        Called methods:
+            None
+
+============================================
+Analyzing file: /home/kawthar/Téléchargements/visitorDesignPattern/src/TaxVisitor.java
+============================================
+
+
+Class: TaxVisitor
+Attributes:
+    - computedTax (protected)
+    - taxRate (protected)
+Methods:
+    - getComputedTax
+        Called methods:
+            None
+    - getTaxRate
+        Called methods:
+            None
+    - computeTax
+        Called methods:
+            - println
+            - getSimpleName
+            - getClass
+            - getPrice
+    - visit
+        Called methods:
+            - computeTax
+    - visit
+        Called methods:
+            - computeTax
+    - visit
+        Called methods:
+            - computeTax
+
+============================================
+Analyzing file: /home/kawthar/Téléchargements/visitorDesignPattern/src/Visitable.java
+============================================
+
+
+Class: Visitable
+Attributes:
+    None
+Methods:
+    - accept
+        Called methods:
+            None
+
+============================================
+Analyzing file: /home/kawthar/Téléchargements/visitorDesignPattern/src/Liquor.java
+============================================
+
+
+Class: Liquor
+Attributes:
+    None
+Methods:
+    - Liquor
+        Called methods:
+            None
+    - accept
+        Called methods:
+            - visit
+
+============================================
+Analyzing file: /home/kawthar/Téléchargements/visitorDesignPattern/src/Necessity.java
+============================================
+
+
+Class: Necessity
+Attributes:
+    None
+Methods:
+    - Necessity
+        Called methods:
+            None
+    - accept
+        Called methods:
+            - visit
+
+============================================
+Analyzing file: /home/kawthar/Téléchargements/visitorDesignPattern/src/Visitor.java
+============================================
+
+
+Class: Visitor
+Attributes:
+    None
+Methods:
+    - visit
+        Called methods:
+            None
+    - visit
+        Called methods:
+            None
+    - visit
+        Called methods:
+            None
+
+============================================
+Analyzing file: /home/kawthar/Téléchargements/visitorDesignPattern/src/Tobacco.java
+============================================
+
+
+Class: Tobacco
+Attributes:
+    None
+Methods:
+    - Tobacco
+        Called methods:
+            None
+    - accept
+        Called methods:
+            - visit
+
+============================================
+Analyzing file: /home/kawthar/Téléchargements/visitorDesignPattern/src/Test.java
+============================================
+
+
+Class: Test
+Attributes:
+    None
+Methods:
+    - main
+        Called methods:
+            - asList
+            - println
+            - computeTaxForProducts
+            - println
+            - computeTaxForProducts
+    - computeTaxForProducts
+        Called methods:
+            - accept
+            - println
+            - getComputedTax
+
+============================================
+Analysis Summary
+============================================
+Total number of classes: 9
+Total lines of code: 341
+Total number of methods: 25
+Total number of packages: 1
+Average number of methods per class: 2,78
+Average number of lines per method: 13,64
+Average number of attributes per class: 0,44
+Top 10% classes with the highest number of methods:
+    - TaxVisitor: 6 methods
+Top 10% classes with the highest number of attributes:
+    - Product: 2 attributes
+Classes that are in both categories:
+Classes with more than 5 methods:
+    - TaxVisitor: 6 methods
+Top 10% methods with the highest number of lines of code:
+    - main: 5 lines
+Maximum number of parameters in a method: 2
+============================================
+Call Graph
+============================================
+setName calls:
+getName calls:
+getComputedTax calls:
+Necessity calls:
+Product calls:
+    - setName
+    - setPrice
+Liquor calls:
+main calls:
+    - asList
+    - println
+    - computeTaxForProducts
+    - println
+    - computeTaxForProducts
+setPrice calls:
+getPrice calls:
+accept calls:
+    - visit
+    - visit
+    - visit
+computeTax calls:
+    - println
+    - getSimpleName
+    - getClass
+    - getPrice
+getTaxRate calls:
+Tobacco calls:
+computeTaxForProducts calls:
+    - accept
+    - println
+    - getComputedTax
+visit calls:
+    - computeTax
+    - computeTax
+    - computeTax
+    - computeTax
+    - computeTax
